@@ -3,4 +3,7 @@
 <p>Address: <%= @pet.address %></p>
 <p>Found_on: <%= @pet.found_on %></p>
 
+<%= link_to "Edit", edit_pet_path(@pet) %>
+<%= link_to "Delete", pet_path(@pet), method: :delete %>
+
 <%= link_to "Back", pets_path %>

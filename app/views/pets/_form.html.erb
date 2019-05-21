@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <%= simple_form_for @pet do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :species, collection: %w(dog cat capybara fish) %>
+        <%= f.input :found_on %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
