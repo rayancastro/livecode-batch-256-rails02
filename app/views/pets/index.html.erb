@@ -7,6 +7,8 @@
       <p>Species: <%= pet.species %></p>
       <p>Address: <%= pet.address %></p>
       <p>Found_on: <%= pet.found_on %></p>
+
+      <%= link_to "More info", pet_path(pet) %>
     </li>
   <% end %>
 </ul>
